@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VEXORA — your gaming top-up hub. Explore game credits, vouchers and digital gaming services.">
+  <title>VEXORA | Gaming Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> LEVEL UP YOUR GAME — VEXORA IS YOUR DIGITAL GAMING HUB</div>
+  <header class="header" id="top">
+    <a class="brand" href="#top" aria-label="VEXORA home"><span class="brand-mark">V</span><span>VEXORA</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav class="nav" id="nav"><a class="active" href="#top">Home</a><a href="#games">Games</a><a href="#services">Services</a><a href="#how">How it works</a><a href="#support">Support</a></nav>
+    <div class="header-actions"><a class="login-link" href="#top">Log in</a><a class="btn btn-small" href="#topup">Get started <span>↗</span></a></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-art" src="images/hero-gaming.jpg" alt="Original blue neon gaming artwork with a team of game-inspired characters">
+      <div class="hero-shade"></div>
+      <div class="hero-content"><div class="eyebrow"><span></span> PLAY MORE. TOP UP SMARTER.</div>
+        <h1>YOUR GAME.<br><em>YOUR LEVEL.</em><br>YOUR VEXORA.</h1>
+        <p>Power up your favourite games with a smoother, simpler top-up experience.</p>
+        <div class="hero-buttons"><a class="btn" href="#games">Explore games <b>↗</b></a><a class="btn btn-ghost" href="#how">How it works</a></div>
+        <div class="hero-points"><span>✦ Clear order details</span><span>✦ Simple process</span><span>✦ Helpful support</span></div>
+      </div>
+      <div class="hero-tag"><b>VXR / 001</b><span>THE NEXT LEVEL<br>STARTS HERE</span></div>
+    </section>
+
+    <section class="section games-section" id="games">
+      <div class="section-heading"><div><div class="eyebrow">CHOOSE YOUR ARENA</div><h2>Popular <em>games</em></h2></div><span class="section-note">PICK A GAME TO GET STARTED <b>↘</b></span></div>
+      <div class="game-grid">
+        <button class="game-card" data-game="Free Fire" data-pack="100 Diamonds" data-price="1200"><img src="images/free-fire.jpg" alt="Free Fire inspired artwork"><span class="game-info"><b>FREE FIRE</b><small>Diamonds top-up</small><strong>Explore <i>↗</i></strong></span></button>
+        <button class="game-card" data-game="PUBG Mobile" data-pack="60 UC" data-price="1500"><img src="images/pubg-mobile.jpg" alt="Battle royale game inspired artwork"><span class="game-info"><b>PUBG MOBILE</b><small>UC top-up</small><strong>Explore <i>↗</i></strong></span></button>
+        <button class="game-card" data-game="Call of Duty Mobile" data-pack="80 CP" data-price="1300"><img src="images/cod-mobile.jpg" alt="Tactical shooter game inspired artwork"><span class="game-info"><b>CALL OF DUTY</b><small>Mobile CP</small><strong>Explore <i>↗</i></strong></span></button>
+        <button class="game-card" data-game="FC Mobile" data-pack="100 FC Points" data-price="1100"><img src="images/fc-mobile.jpg" alt="Football gaming inspired artwork"><span class="game-info"><b>FC MOBILE</b><small>FC Points</small><strong>Explore <i>↗</i></strong></span></button>
+        <button class="game-card" data-game="Roblox" data-pack="400 Robux" data-price="2500"><img src="images/roblox.jpg" alt="Block-style adventure game inspired artwork"><span class="game-info"><b>ROBLOX</b><small>Robux & gift cards</small><strong>Explore <i>↗</i></strong></span></button>
+      </div>
+    </section>
+
+    <section class="service-band" id="services"><div class="section-heading"><div><div class="eyebrow">MORE THAN A TOP-UP</div><h2>Built for <em>players</em></h2></div><span class="section-note">ONE HUB. MORE POSSIBILITIES.</span></div>
+      <div class="service-grid"><article><span class="service-icon">◇</span><b>Game credits</b><p>Explore in-game currency packages for supported titles.</p></article><article><span class="service-icon">▣</span><b>Digital vouchers</b><p>Discover digital gift-card options as they become available.</p></article><article><span class="service-icon">✦</span><b>Player support</b><p>Get help understanding your order and its status.</p></article><article><span class="service-icon">◈</span><b>Clear checkout</b><p>Review your game, package and player details before proceeding.</p></article></div>
+    </section>
+
+    <section class="topup-section" id="topup"><div class="topup-copy"><div class="eyebrow">READY WHEN YOU ARE</div><h2>Make your next<br><em>move count.</em></h2><p>Choose a game and package, then enter the player ID required by that game. This demo lets you preview an order without collecting payment.</p><div class="mini-trust"><span>✓ No game password needed</span><span>✓ No OTP requested</span><span>✓ Review before you proceed</span></div></div>
+      <div class="order-card"><div class="order-top"><div><small>VEXORA / ORDER BUILDER</small><h3>Build your top-up</h3></div><span class="order-step">01 <i>/ 03</i></span></div>
+        <form id="orderForm">
+          <label for="gameSelect">Select game</label><select id="gameSelect" required><option value="">Choose a game</option><option>Free Fire</option><option>PUBG Mobile</option><option>Call of Duty Mobile</option><option>FC Mobile</option><option>Roblox</option></select>
+          <label for="packageSelect">Select package</label><select id="packageSelect" required><option value="">Choose a package</option></select>
+          <label for="playerId">Player ID / UID</label><input id="playerId" type="text" placeholder="Enter your in-game player ID" required maxlength="40" autocomplete="off">
+          <div class="field-hint">Use your public player ID only. Never enter your game password or one-time code.</div>
+          <div class="order-total"><span>Estimated total</span><strong id="price">₦0</strong></div>
+          <button class="btn submit-btn" type="submit">Preview order <span>→</span></button>
+          <p class="demo-note">DEMO ONLY · No payment is taken and no top-up is delivered.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="promo-grid"><a class="promo-card" href="#topup"><img src="images/promo-freefire.jpg" alt="Action gaming promotional artwork"><span><small>FIND YOUR NEXT DROP</small><b>POWER UP<br>YOUR PLAY</b><i>Explore top-ups ↗</i></span></a><a class="promo-card" href="#games"><img src="images/promo-diamonds.jpg" alt="Blue digital gems and gaming rewards artwork"><span><small>THE VEXORA EDGE</small><b>MORE GAME.<br>MORE MOMENTS.</b><i>Browse games ↗</i></span></a><a class="promo-card" href="#support"><img src="images/promo-community.jpg" alt="Gaming community inspired artwork"><span><small>STAY IN THE LOOP</small><b>JOIN THE<br>COMMUNITY</b><i>Get support ↗</i></span></a></section>
+
+    <section class="how-section" id="how"><div class="section-heading"><div><div class="eyebrow">NO CONFUSION. JUST CLARITY.</div><h2>How it <em>works</em></h2></div></div><div class="steps"><article><span>01</span><b>Choose your game</b><p>Select the game and package you want to explore.</p></article><article><span>02</span><b>Enter player details</b><p>Provide the correct public player ID and review it carefully.</p></article><article><span>03</span><b>Review your order</b><p>Check the details and total before any real transaction is considered.</p></article></div></section>
+  </main>
+  <footer id="support"><a class="brand" href="#top"><span class="brand-mark">V</span><span>VEXORA</span></a><p>PLAY SMARTER. LIVE THE GAME.</p><div class="footer-links"><a href="#games">Games</a><a href="#how">How it works</a><a href="mailto:support@vexora.example">Support</a><a href="#top">Back to top ↑</a></div><small>© 2026 VEXORA. Independent demo project. All game names and trademarks belong to their respective owners.</small></footer>
+
+  <div class="modal" id="orderModal" aria-hidden="true"><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="modal-mark">✓</div><div class="eyebrow">ORDER PREVIEW CREATED</div><h2 id="modalTitle">Check your details</h2><p class="modal-intro">This is a local demo preview. It has not been sent, paid for or processed.</p><div class="receipt"><div><span>Game</span><b id="receiptGame">—</b></div><div><span>Package</span><b id="receiptPackage">—</b></div><div><span>Player ID</span><b id="receiptId">—</b></div><div><span>Estimated total</span><b id="receiptPrice">—</b></div></div><button class="btn submit-btn" id="modalDone">Got it</button></div></div>
+  <script src="script.js"></script>
+</body></html>
